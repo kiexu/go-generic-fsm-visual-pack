@@ -26,8 +26,12 @@ github.com/json-iterator/go v1.1.12 h1:PV8peI4a0ysnczrg+LtxykD8LfKY9ML6u2jnxaEnr
 github.com/json-iterator/go v1.1.12/go.mod h1:e30LSqwooZae/UwlEbR2852Gd8hjQvJoHmT4TnhNGBo=
 github.com/kiexu/go-generic-collection v0.3.0 h1:i0oXhfq6n1wTi99nSaJfi0oedJh4hY1dEodqlwS58t4=
 github.com/kiexu/go-generic-collection v0.3.0/go.mod h1:2Q7BZWAkl4qxTo+jS3BZ3e+DliAp5MW/uYH/Swla7kA=
+github.com/kiexu/go-generic-collection v0.3.1 h1:9E2dKezYzPUYGu0Rywp9og/Lw6LMqxtp8FFCOFiNcG8=
+github.com/kiexu/go-generic-collection v0.3.1/go.mod h1:2Q7BZWAkl4qxTo+jS3BZ3e+DliAp5MW/uYH/Swla7kA=
 github.com/kiexu/go-generic-fsm v0.0.0-20220714153807-393cdf18f778 h1:f9WiuYjugmpqYLr1+B0MHRB/AHr6DUkeVx4rB+qCgrY=
 github.com/kiexu/go-generic-fsm v0.0.0-20220714153807-393cdf18f778/go.mod h1:SPhjhZNuK6+RHNbnXUtBUkv8pAq8UA6h+Ecx+nGTn5U=
+github.com/kiexu/go-generic-fsm v0.8.2 h1:+KoH2Ez0ov6sJ2M+btui1+d7VZJRhmO4EJCxnO0HN/8=
+github.com/kiexu/go-generic-fsm v0.8.2/go.mod h1:myKt459++ZLeC+xLcnorue6VcmMmXGW7O/rVNF7uzhU=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
 github.com/kr/pretty v0.3.0 h1:WgNl7dwNpEZ6jJ9k1snq4pZsg7DOEN8hP9Xw0Tsjwk0=
