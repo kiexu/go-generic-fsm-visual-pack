@@ -18,7 +18,7 @@ type WebPageVisualizer struct {
 }
 
 // Open add generator to tokenMap
-func (w *WebPageVisualizer) Open(wrapper *fsm.VisualizeStartWrapper) error {
+func (w *WebPageVisualizer) Open(wrapper *fsm.VisualOpenPackWrapper) error {
 
 	w.mutex.Lock()
 	defer w.mutex.Unlock()
@@ -43,7 +43,7 @@ func (w *WebPageVisualizer) Open(wrapper *fsm.VisualizeStartWrapper) error {
 }
 
 // Close delete generator from tokenMap
-func (w *WebPageVisualizer) Close(wrapper *fsm.VisualizeStopWrapper) error {
+func (w *WebPageVisualizer) Close(wrapper *fsm.VisualClosePackWrapper) error {
 
 	w.mutex.Lock()
 	defer w.mutex.Unlock()

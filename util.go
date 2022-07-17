@@ -9,7 +9,7 @@ import (
 const (
 	header          = "graph RL"
 	indent          = "    " // indent with 4 spaces
-	stateFmt        = "stateFmt: [%v]"
+	stateFmt        = "state: [%v]"
 	indexFmt        = "idx: [%v]"
 	prevState       = "[previous]"
 	currState       = "[current]"

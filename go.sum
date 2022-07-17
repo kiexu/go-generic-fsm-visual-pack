@@ -32,6 +32,8 @@ github.com/kiexu/go-generic-fsm v0.0.0-20220714153807-393cdf18f778 h1:f9WiuYjugm
 github.com/kiexu/go-generic-fsm v0.0.0-20220714153807-393cdf18f778/go.mod h1:SPhjhZNuK6+RHNbnXUtBUkv8pAq8UA6h+Ecx+nGTn5U=
 github.com/kiexu/go-generic-fsm v0.8.2 h1:+KoH2Ez0ov6sJ2M+btui1+d7VZJRhmO4EJCxnO0HN/8=
 github.com/kiexu/go-generic-fsm v0.8.2/go.mod h1:myKt459++ZLeC+xLcnorue6VcmMmXGW7O/rVNF7uzhU=
+github.com/kiexu/go-generic-fsm v0.8.3 h1:GkCgsASv4Bh8wjSvuRIEM2tXOthDd24D4ma9K3kURXg=
+github.com/kiexu/go-generic-fsm v0.8.3/go.mod h1:myKt459++ZLeC+xLcnorue6VcmMmXGW7O/rVNF7uzhU=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
 github.com/kr/pretty v0.3.0 h1:WgNl7dwNpEZ6jJ9k1snq4pZsg7DOEN8hP9Xw0Tsjwk0=
