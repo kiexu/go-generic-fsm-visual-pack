@@ -7,16 +7,18 @@ import (
 )
 
 const (
-	header    = "graph RL"
-	indent    = "    " // indent with 4 spaces
-	stateFmt  = "stateFmt: [%v]"
-	indexFmt  = "idx: [%v]"
-	prevState = "[previous]"
-	currState = "[current]"
-	blockFmt  = `%v["%v"]:::%v`
-	edgeFmt   = `%v%v -- "[%v]" --> %v`
-	cssBlock  = "c"
-	css       = "classDef " + cssBlock + " fill:#FFF8DC,stroke:#696969,stroke-width:2px"
+	header          = "graph RL"
+	indent          = "    " // indent with 4 spaces
+	stateFmt        = "stateFmt: [%v]"
+	indexFmt        = "idx: [%v]"
+	prevState       = "[previous]"
+	currState       = "[current]"
+	blockFmt        = `%v["%v"]:::%v`
+	edgeFmt         = `%v%v -- "[%v]" --> %v`
+	cssBlockNormal  = "block"
+	cssNormal       = "classDef " + cssBlockNormal + " fill:#fdf9ee,stroke:#939391,stroke-width:2px"
+	cssBlockCurrent = "currentBlock"
+	cssCurrent      = "classDef " + cssBlockCurrent + " fill:#eee5f8,stroke:#939391,stroke-width:3px"
 )
 
 type mermaidFlowFormatter struct {
@@ -44,7 +46,8 @@ func (f *mermaidFlowFormatter) exportMermaid() (string, error) {
 			lines = append(lines, f.exportEdge(e))
 		}
 	}
-	lines = append(lines, css)
+	lines = append(lines, cssNormal)
+	lines = append(lines, cssCurrent)
 	return strings.Join(lines, "\n"), nil
 }
 
@@ -52,16 +55,18 @@ func (f *mermaidFlowFormatter) exportNode(v *fsm.Vertex[string, string]) string 
 	if v == nil {
 		return ""
 	}
+	css := cssBlockNormal
 	lines := make([]string, 0)
 	lines = append(lines, fmt.Sprintf(stateFmt, v.StateVal())) // State name
 	lines = append(lines, fmt.Sprintf(indexFmt, v.Idx()))      // Node indexFmt
 	if f.fsm.CurrState() == v.StateVal() {
 		lines = append(lines, currState)
+		css = cssBlockCurrent
 	}
 	if f.fsm.PrevState() == v.StateVal() {
 		lines = append(lines, prevState)
 	}
-	return fmt.Sprintf(blockFmt, v.Idx(), strings.Join(lines, "<br>"), cssBlock)
+	return fmt.Sprintf(blockFmt, v.Idx(), strings.Join(lines, "<br>"), css)
 }
 
 func (f *mermaidFlowFormatter) exportEdge(e *fsm.Edge[string, string, string, string]) string {
